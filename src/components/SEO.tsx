@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Helmet } from "@dr.pogodin/react-helmet";
 
 interface SEOProps {
   title?: string;
@@ -10,10 +10,10 @@ interface SEOProps {
 export default function SEO({
   title = "TezkorNews24 - Yangiliklar",
   description = "O'zbekiston va dunyo yangiliklari tezkor tarzda",
-  image = "https://tezkornews24.vercel.app/default-og.jpg",
+  image = "https://tezkornews24.uz/default-og.jpg",
   url,
 }: SEOProps) {
-  const siteUrl = "https://tezkornews24.vercel.app";
+  const siteUrl = "https://tezkornews24.uz";
   const fullUrl = url ? `${siteUrl}${url}` : siteUrl;
 
   return (
@@ -22,6 +22,7 @@ export default function SEO({
       <title>{title}</title>
       <meta name="description" content={description} />
       <meta name="robots" content="index, follow" />
+
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
