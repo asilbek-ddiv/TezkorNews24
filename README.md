@@ -24,8 +24,8 @@ Maqsad: **NewsData.io** API orqali real vaqtda yangiliklarni olish.
 1. Repozitoriyani klon qiling
 
    ```bash
-   git clone https://github.com/asilbek-ddiv/tezkornews24.git
-   cd tezkornews24
+   git clone https://github.com/asilbek-ddiv/TezkorNews24.git
+   cd TezkorNews24
    ```
 2. Bog'liqlarni o'rnatish
    ```bash
